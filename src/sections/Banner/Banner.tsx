@@ -2,12 +2,15 @@ import { CustomButton } from "../../components";
 import ProgramerGif from "../../assets/programmer_gif.gif";
 import githubIcon from "../../assets/githubIcon.svg";
 import whatsAppIcon from "../../assets/whatsappIcon.svg";
+import styles from "../../styles";
 
 const Banner = () => {
    return (
-      <div className="min-h-[600px]">
+      <div className={`min-h-[600px] ${styles.xPaddings}`}>
          {/* Banner grid */}
-         <div className="max-w-[1280px] mx-auto grid grid-cols-2 h-[500px] ">
+         <div
+            className={`${styles.innerWidth}  mx-auto grid grid-cols-2 h-[500px] `}
+         >
             {/* left Side */}
             <div className="flex flex-col justify-center z-[2]">
                <p className="font-Roboto font-semibold text-softBlue text-[50px]">
