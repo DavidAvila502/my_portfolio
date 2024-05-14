@@ -1,3 +1,3 @@
-import Banner from "./Banner/Banner";
+import Banner from "./Banner";
 
 export { Banner };

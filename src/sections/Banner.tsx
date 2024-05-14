@@ -1,8 +1,14 @@
-import { CustomButton } from "../../components";
-import ProgramerGif from "../../assets/programmer_gif.gif";
-import githubIcon from "../../assets/githubIcon.svg";
-import whatsAppIcon from "../../assets/whatsappIcon.svg";
-import styles from "../../styles";
+import { CustomButton } from "../components";
+import ProgramerGif from "../assets/programmer_gif.gif";
+import githubIcon from "../assets/githubIcon.svg";
+import whatsAppIcon from "../assets/whatsappIcon.svg";
+import styles from "../styles";
+import { motion } from "framer-motion";
+import {
+   programmerImageVariants,
+   textTypingStagger,
+   typing,
+} from "../utils/motion";
 
 const Banner = () => {
    return (
@@ -14,7 +20,12 @@ const Banner = () => {
             `}
          >
             {/* left Side */}
-            <div className="flex flex-col justify-center z-[2]">
+            <motion.div
+               initial={{ x: 200, opacity: 0 }}
+               whileInView={{ x: 0, opacity: 100 }}
+               transition={{ duration: 0.5 }}
+               className="flex flex-col justify-center z-[2]"
+            >
                <p
                   className="font-Roboto font-semibold text-softBlue text-[50px] 
                max-xl:text-[40px] max-lg:text-[30px]"
@@ -27,12 +38,19 @@ const Banner = () => {
                >
                   DAVID AVILA
                </p>
-               <p
+
+               {/* Dinamic TypingText */}
+               <motion.p
+                  variants={textTypingStagger}
+                  initial="hidden"
+                  whileInView="show"
                   className="font-Roboto_serif text-white text-[40px]
                 max-xl:text-[30px] max-lg:text-[20px]"
                >
-                  Desarrollador Frontend Junnior.{" "}
-               </p>
+                  {Array.from("Desarrollador Frontend Junnior.").map((i) => (
+                     <motion.span variants={typing}>{i}</motion.span>
+                  ))}
+               </motion.p>
 
                {/* Buttons */}
                <div className="mt-[40px] flex gap-[10%]">
@@ -67,17 +85,22 @@ const Banner = () => {
                      />
                   </div>
                </div>
-            </div>
+            </motion.div>
 
             {/* Right Side */}
-            <div className=" flex justify-center items-center ">
+            <motion.div
+               variants={programmerImageVariants}
+               initial="hidden"
+               whileInView="show"
+               className=" flex justify-center items-center"
+            >
                <img
                   className="rounded-[100%] w-[474px] h-[442px] z-[2] 
                   max-xl:w-[374px] max-xl:h-[342px] max-lg:w-[324px] max-lg:h-[292px]"
                   src={ProgramerGif}
                   alt="Programmer gif"
                />
-            </div>
+            </motion.div>
          </div>
       </div>
    );
