@@ -4,10 +4,10 @@ import styles from "../../styles";
 const Navbar = () => {
    return (
       <div className={`mb-[120px] ${styles.xPaddings}`}>
-         <div className={`${styles.innerWidth} mx-auto`}>
+         <div className={`${styles.innerWidth} mx-auto max-sm:hidden`}>
             <ul
                className="flex flex-row items-center gap-[20px]
-             text-white text-[18px] font-Roboto font-semibold"
+             text-white text-[18px] font-Roboto font-semibold  max-lg:text-[14px]"
             >
                <li>
                   <img src={tagIcon} alt="programmer icon" />

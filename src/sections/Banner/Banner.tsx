@@ -6,20 +6,31 @@ import styles from "../../styles";
 
 const Banner = () => {
    return (
-      <div className={`min-h-[600px] ${styles.xPaddings}`}>
+      <div className={`min-h-[700px] ${styles.xPaddings}`}>
          {/* Banner grid */}
          <div
-            className={`${styles.innerWidth}  mx-auto grid grid-cols-2 h-[500px] `}
+            className={`${styles.innerWidth} mx-auto grid grid-cols-2 min-h-[600px]
+            max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center max-sm:gap-9
+            `}
          >
             {/* left Side */}
             <div className="flex flex-col justify-center z-[2]">
-               <p className="font-Roboto font-semibold text-softBlue text-[50px]">
+               <p
+                  className="font-Roboto font-semibold text-softBlue text-[50px] 
+               max-xl:text-[40px] max-lg:text-[30px]"
+               >
                   Hola, soy
                </p>
-               <p className="font-Roboto_slab font-semibold text-white text-[70px]">
+               <p
+                  className="font-Roboto_slab font-semibold text-white text-[70px]
+                max-xl:text-[60px] max-lg:text-[50px]"
+               >
                   DAVID AVILA
                </p>
-               <p className="font-Roboto_serif text-white text-[40px]">
+               <p
+                  className="font-Roboto_serif text-white text-[40px]
+                max-xl:text-[30px] max-lg:text-[20px]"
+               >
                   Desarrollador Frontend Junnior.{" "}
                </p>
 
@@ -59,9 +70,10 @@ const Banner = () => {
             </div>
 
             {/* Right Side */}
-            <div className=" flex justify-center items-center">
+            <div className=" flex justify-center items-center ">
                <img
-                  className="rounded-[100%] w-[474px] h-[442px] z-[2]"
+                  className="rounded-[100%] w-[474px] h-[442px] z-[2] 
+                  max-xl:w-[374px] max-xl:h-[342px] max-lg:w-[324px] max-lg:h-[292px]"
                   src={ProgramerGif}
                   alt="Programmer gif"
                />
