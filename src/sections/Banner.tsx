@@ -92,19 +92,17 @@ const Banner = () => {
             </motion.div>
 
             {/* Right Side */}
-            <motion.div
-               variants={programmerImageVariants}
-               initial="hidden"
-               whileInView="show"
-               className=" flex justify-center items-center"
-            >
-               <img
+            <div className=" flex justify-center items-center">
+               <motion.img
+                  variants={programmerImageVariants}
+                  initial="hidden"
+                  whileInView="show"
                   className="rounded-[100%] w-[474px] h-[442px] z-[2] 
                   max-xl:w-[374px] max-xl:h-[342px] max-lg:w-[324px] max-lg:h-[292px]"
                   src={ProgramerGif}
                   alt="Programmer gif"
                />
-            </motion.div>
+            </div>
          </div>
       </div>
    );

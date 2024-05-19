@@ -13,6 +13,7 @@ export default {
             Roboto: ["Roboto", "sans-serif"],
             Roboto_slab: ["Roboto Slab", "sans-serif"],
             Roboto_serif: ["Roboto Serif", "sans-serif"],
+            Roboto_mono: ["Roboto Mono", "sans-serif"],
          },
       },
    },

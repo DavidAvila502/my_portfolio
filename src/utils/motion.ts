@@ -1,6 +1,6 @@
 export const programmerImageVariants = {
    hidden: {
-      y: 200,
+      y: -200,
       opacity: 0,
       transition: { duration: 0.5 },
    },

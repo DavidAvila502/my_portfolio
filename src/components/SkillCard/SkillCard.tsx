@@ -62,7 +62,7 @@ const SkillCard = ({ image, title, description }: SkillCardProps) => {
                   opacity: isExpanded ? 1 : 0,
                   height: isExpanded ? "auto" : 0,
                }}
-               className="max-w-[300px]"
+               className="max-w-[300px] font-Roboto_mono text-[20px]"
             >
                {description}
             </motion.p>
