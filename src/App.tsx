@@ -1,6 +1,7 @@
-import { Banner } from "./sections";
 import ballsBackground from "./assets/CIRCLE BACKGROUND.svg";
 import { Navbar } from "./components";
+import { Banner, Skills } from "./sections";
+
 const App = () => {
    return (
       // Main container
@@ -15,6 +16,7 @@ const App = () => {
          />
          <Navbar />
          <Banner />
+         <Skills />
       </div>
    );
 };

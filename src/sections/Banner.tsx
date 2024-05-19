@@ -47,9 +47,13 @@ const Banner = () => {
                   className="font-Roboto_serif text-white text-[40px]
                 max-xl:text-[30px] max-lg:text-[20px]"
                >
-                  {Array.from("Desarrollador Frontend Junnior.").map((i) => (
-                     <motion.span variants={typing}>{i}</motion.span>
-                  ))}
+                  {Array.from("Desarrollador Frontend Junnior.").map(
+                     (i, index) => (
+                        <motion.span key={index} variants={typing}>
+                           {i}
+                        </motion.span>
+                     )
+                  )}
                </motion.p>
 
                {/* Buttons */}
