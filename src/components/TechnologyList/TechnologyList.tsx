@@ -1,5 +1,7 @@
 import { Technology } from "../../interfaces";
 
+import { motion } from "framer-motion";
+import { technologyCardVariants } from "../../utils/motion";
 interface TechnologyListProps {
    list: Technology[];
    selected: Technology;
@@ -14,7 +16,8 @@ const TechnologyList = ({
    return (
       <div className="flex flex-row  max-[900px]:justify-center flex-wrap gap-8">
          {list.map((technology, index) => (
-            <div
+            <motion.div
+               variants={technologyCardVariants}
                key={index}
                className={`flex flex-col items-center justify-evenly rounded-[10px]
                w-[165px] h-[183px] ${
@@ -39,7 +42,7 @@ const TechnologyList = ({
                <p className="font-Roboto_slab font-semibold text-[20px] text-white">
                   {technology.name}
                </p>
-            </div>
+            </motion.div>
          ))}
       </div>
    );
