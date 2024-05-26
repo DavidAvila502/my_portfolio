@@ -1,3 +1,4 @@
 import CustomButtonProps from "./CustomButton";
+import Technology from "./Technology";
 
-export type { CustomButtonProps };
+export type { CustomButtonProps, Technology };
