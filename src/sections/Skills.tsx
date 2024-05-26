@@ -6,7 +6,10 @@ import deployIcon from "../assets/DeployIcon.svg";
 
 const Skills = () => {
    return (
-      <div className={`${styles.yPaddings} bg-darkBlue1 min-h-[600px]`}>
+      <div
+         id="skills"
+         className={`${styles.yPaddings} bg-darkBlue1 min-h-[600px]`}
+      >
          <p
             className={`text-center font-Roboto font-semibold text-[30px] text-white`}
          >

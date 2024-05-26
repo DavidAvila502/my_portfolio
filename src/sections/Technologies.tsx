@@ -12,6 +12,7 @@ const Technologies = () => {
 
    return (
       <div
+         id="technologies"
          className={`${styles.yPaddings} ${styles.xPaddings} min-h-[700px]`}
          style={{
             background: `linear-gradient(to top, ${selectedTechnology.rgbaColor}, rgba(17, 19, 19, 0.3), rgba(17, 19, 19, 0.3))`,

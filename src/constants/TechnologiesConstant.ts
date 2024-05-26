@@ -4,6 +4,9 @@ import htmlIcon from "../assets/html.svg";
 import cssIcon from "../assets/css.svg";
 import nodeIcon from "../assets/node.svg";
 import typescriptIcon from "../assets/typescript.svg";
+import gitIcon from "../assets/git.svg";
+import pythonIcon from "../assets/pytnon.svg";
+import flaskIcon from "../assets/Flask.svg";
 
 const TechnologiesConstants = [
    {
@@ -52,6 +55,26 @@ const TechnologiesConstants = [
       Image: typescriptIcon,
       description: "Lenguaje de programación libre y de código abierto",
       rgbaColor: "rgba(25, 73, 198)",
+   },
+   {
+      name: "Git",
+      Image: gitIcon,
+      description:
+         "Software de control se versiones para la gestion de cambios.",
+      rgbaColor: "rgba(246, 96, 31)",
+   },
+   {
+      name: "Python",
+      Image: pythonIcon,
+      description: "Lenguaje de programación de alto nivel interpretado.",
+      rgbaColor: "rgba(246, 161, 32)",
+   },
+   {
+      name: "Flask",
+      Image: flaskIcon,
+      description:
+         "Micro framework backend de código abierto, escrito en Python.",
+      rgbaColor: "rgba(255, 255, 255)",
    },
 ];
 

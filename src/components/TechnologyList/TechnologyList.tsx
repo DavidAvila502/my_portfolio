@@ -20,7 +20,7 @@ const TechnologyList = ({
                variants={technologyCardVariants}
                key={index}
                className={`flex flex-col items-center justify-evenly rounded-[10px]
-               w-[165px] h-[183px] ${
+               w-[165px] h-[183px]  max-sm:w-[135px] max-sm:h-[153px] ${
                   selected.name === technology.name
                      ? "bg-selectedBlue"
                      : "bg-opacityGray"
@@ -34,12 +34,12 @@ const TechnologyList = ({
                }}
             >
                <img
-                  className="h-[70px]"
+                  className="h-[70px] max-sm:h-[60px]"
                   src={technology.Image}
                   alt={technology.name}
                />
 
-               <p className="font-Roboto_slab font-semibold text-[20px] text-white">
+               <p className="font-Roboto_slab font-semibold text-[20px] text-white max-sm:text-[18px]">
                   {technology.name}
                </p>
             </motion.div>
