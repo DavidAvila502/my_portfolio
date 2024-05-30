@@ -1,6 +1,7 @@
 import ballsBackground from "./assets/CIRCLE BACKGROUND.svg";
 import { Navbar } from "./components";
 import { Banner, Skills } from "./sections";
+import Projects from "./sections/Projects";
 import Tetchnologies from "./sections/Technologies";
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
          <Banner />
          <Skills />
          <Tetchnologies />
+         <Projects />
       </div>
    );
 };
