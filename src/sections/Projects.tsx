@@ -19,9 +19,10 @@ const Projects = () => {
          <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 2 }}
             onMouseEnter={() => setIsHover(true)}
             onMouseLeave={() => setIsHover(false)}
+            className={`max-w-[2368px] mx-auto`}
          >
             <Swiper
                navigation={true}

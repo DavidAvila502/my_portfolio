@@ -3,6 +3,7 @@ import { Navbar } from "./components";
 import { Banner, Skills } from "./sections";
 import Projects from "./sections/Projects";
 import Tetchnologies from "./sections/Technologies";
+import Contact from "./sections/Contact";
 
 const App = () => {
    return (
@@ -22,6 +23,7 @@ const App = () => {
          <Skills />
          <Tetchnologies />
          <Projects />
+         <Contact />
       </div>
    );
 };
