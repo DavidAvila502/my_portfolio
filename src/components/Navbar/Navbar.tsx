@@ -12,8 +12,10 @@ const Navbar = () => {
                <li>
                   <img src={tagIcon} alt="programmer icon" />
                </li>
-               <li>Contacto</li>
-               <li>Sobre mi</li>
+               <li>
+                  <a href="#contact">Contacto</a>
+               </li>
+               {/* <li>Sobre mi</li> */}
 
                <li>|</li>
                <li>

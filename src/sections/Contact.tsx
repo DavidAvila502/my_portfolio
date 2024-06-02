@@ -4,11 +4,12 @@ import copiRightIcon from "../assets/copyrightIcon.svg";
 import whatsappIcon from "../assets/whatsappIcon.svg";
 import telegramIcon from "../assets/telegram.svg";
 import githubIcon from "../assets/githubIcon.svg";
+import { motion } from "framer-motion";
 
 const Contact = () => {
    return (
       <div
-         id="Contact"
+         id="contact"
          className={`${styles.yPaddings} ${styles.xPaddings} min-h-[600px]`}
       >
          <p
@@ -17,7 +18,10 @@ const Contact = () => {
             Contacto
          </p>
 
-         <div
+         <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1 }}
             className={`grid grid-cols-2 h-[500px] mx-auto ${styles.innerWidth} max-sm:flex flex-col justify-center items-center gap-9`}
          >
             {/* Right side */}
@@ -87,9 +91,13 @@ const Contact = () => {
 
             {/* Left Side */}
             <div className="flex items-center justify-center">
-               <img src={emailImage} alt="email-image.svg" />
+               <img
+                  className="max-sm:h-[150px]"
+                  src={emailImage}
+                  alt="email-image.svg"
+               />
             </div>
-         </div>
+         </motion.div>
       </div>
    );
 };
