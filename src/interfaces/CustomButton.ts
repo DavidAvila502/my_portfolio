@@ -3,4 +3,5 @@ export default interface CustomButtonProps {
    backgroundColor?: string;
    fontColor?: string;
    borderColor?: string;
+   href?: string;
 }

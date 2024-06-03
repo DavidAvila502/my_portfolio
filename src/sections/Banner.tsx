@@ -63,8 +63,13 @@ const Banner = () => {
                      fontColor="#2FA1EA"
                      backgroundColor="#111313"
                      borderColor="#2FA1EA"
+                     href="#contact"
                   />
-                  <CustomButton name="Proyectos" backgroundColor="#fff" />
+                  <CustomButton
+                     name="Proyectos"
+                     backgroundColor="#fff"
+                     href="#projects"
+                  />
                </div>
 
                {/* Social box */}
