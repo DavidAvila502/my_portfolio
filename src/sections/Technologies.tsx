@@ -23,7 +23,7 @@ const Technologies = () => {
             <p
                className={`text-center font-Roboto font-semibold text-[30px] text-white mb-[20px]`}
             >
-               Tecnologias
+               Tecnologías
             </p>
             {/* Grid container */}
             <div className="grid max-[900px]:grid-cols-1 grid-cols-2">
