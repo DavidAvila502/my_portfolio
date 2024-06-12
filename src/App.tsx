@@ -1,9 +1,9 @@
 import ballsBackground from "./assets/CIRCLE BACKGROUND.svg";
 import { Navbar } from "./components";
-import { Banner, Skills } from "./sections";
-import Projects from "./sections/Projects";
-import Tetchnologies from "./sections/Technologies";
-import Contact from "./sections/Contact";
+import { Banner, Skills, Technologies, Projects, Contact } from "./sections";
+// import Projects from "./sections/Projects";
+// import Tetchnologies from "./sections/Technologies";
+// import Contact from "./sections/Contact";
 
 const App = () => {
    return (
@@ -21,7 +21,7 @@ const App = () => {
          <Navbar />
          <Banner />
          <Skills />
-         <Tetchnologies />
+         <Technologies />
          <Projects />
          <Contact />
       </div>
