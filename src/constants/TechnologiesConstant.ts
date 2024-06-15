@@ -7,6 +7,7 @@ import typescriptIcon from "../assets/typescript.svg";
 import gitIcon from "../assets/git.svg";
 import pythonIcon from "../assets/pytnon.svg";
 import flaskIcon from "../assets/Flask.svg";
+import strapiIcon from "../assets/strapi-logo.png";
 
 const TechnologiesConstants = [
    {
@@ -75,6 +76,14 @@ const TechnologiesConstants = [
       description:
          "Micro framework backend de código abierto, escrito en Python.",
       rgbaColor: "rgba(255, 255, 255)",
+   },
+
+   {
+      name: "Strapi",
+      Image: strapiIcon,
+      description:
+         "Strapi es un CMS de código abierto, moderno y flexible que proporciona una solución escalable y personalizable para la gestión de contenido. ",
+      rgbaColor: "rgba(78, 38, 224)",
    },
 ];
 
