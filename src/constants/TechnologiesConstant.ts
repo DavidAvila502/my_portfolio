@@ -8,6 +8,7 @@ import gitIcon from "../assets/git.svg";
 import pythonIcon from "../assets/pytnon.svg";
 import flaskIcon from "../assets/Flask.svg";
 import strapiIcon from "../assets/strapi-logo.png";
+import flutterIcon from "../assets/flutter.svg";
 
 const TechnologiesConstants = [
    {
@@ -25,6 +26,13 @@ const TechnologiesConstants = [
       rgbaColor: "rgba(47, 161, 234)",
    },
    {
+      name: "Flutter",
+      Image: flutterIcon,
+      description:
+         "Framework para desarrollo de aplicaciones móviles multiplataforma , android / ios.",
+      rgbaColor: "rgba(71, 163, 208)",
+   },
+   {
       name: "Html",
       Image: htmlIcon,
       description:
@@ -38,13 +46,13 @@ const TechnologiesConstants = [
          "Lenguaje de diseño gráfico para definir y crear la presentación de un documento de lenguaje de marcado.",
       rgbaColor: "rgba(109, 168, 255 )",
    },
-   {
-      name: "Node js",
-      Image: nodeIcon,
-      description:
-         "Entorno en tiempo de ejecución basado en el lenguaje de programación JavaScript.",
-      rgbaColor: "rgba(8, 177, 76 )",
-   },
+   // {
+   //    name: "Node js",
+   //    Image: nodeIcon,
+   //    description:
+   //       "Entorno en tiempo de ejecución basado en el lenguaje de programación JavaScript.",
+   //    rgbaColor: "rgba(8, 177, 76 )",
+   // },
    {
       name: "Express js",
       Image: nodeIcon,

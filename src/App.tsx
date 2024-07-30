@@ -1,9 +1,6 @@
 import ballsBackground from "./assets/CIRCLE BACKGROUND.svg";
 import { Navbar } from "./components";
 import { Banner, Skills, Technologies, Projects, Contact } from "./sections";
-// import Projects from "./sections/Projects";
-// import Tetchnologies from "./sections/Technologies";
-// import Contact from "./sections/Contact";
 
 const App = () => {
    return (

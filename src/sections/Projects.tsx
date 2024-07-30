@@ -22,6 +22,7 @@ const Projects = () => {
             transition={{ duration: 2 }}
             onMouseEnter={() => setIsHover(true)}
             onMouseLeave={() => setIsHover(false)}
+            onClick={() => setIsHover(!isHover)}
             className={`max-w-[2368px] mx-auto`}
          >
             <Swiper
